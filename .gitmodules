@@ -1,0 +1,9 @@
+[submodule "chatbot-with-rule-based-responses"]
+	path = chatbot-with-rule-based-responses
+	url = https://github.com/Sreeram5678/CHATBOT-WITH-RULE-BASED-RESPONSES.git
+[submodule "tic-tac-toe-ai"]
+	path = tic-tac-toe-ai
+	url = https://github.com/Sreeram5678/TIC-TAC-TOE-AI.git
+[submodule "recommendation-system"]
+	path = recommendation-system
+	url = https://github.com/Sreeram5678/RECOMMENDATION-SYSTEM.git
