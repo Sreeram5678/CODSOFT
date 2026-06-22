@@ -1,0 +1,196 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+
+% Configure page headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small External Internship Logbook (CodSoft)}
+\lhead{\small RV University | Review 1}
+\rfoot{\small Page \thepage}
+\lfoot{\small AI/ML Track}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Define custom column alignment and wrapping
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+
+% Manually formatted title block to prevent header overlapping
+\begin{center}
+    \textbf{\Large RV UNIVERSITY}\\
+    \textbf{\large School of Computer Science and Engineering}\\
+    \vspace{0.15in}
+    \textbf{\Large WEEKLY PROGRESS DIARY (LOGBOOK)}\\
+    \vspace{0.05in}
+    \textbf{\large External AI/ML Internship at CodSoft (Review 1 Evaluation)}\\
+    \vspace{0.15in}
+    \small
+    \textbf{Student Name:} Sreeram Lagisetty \quad | \quad \textbf{USN:} 1RUA24CSE0219 \quad | \quad \textbf{Duration:} May 18, 2026 -- June 19, 2026
+\end{center}
+
+\vspace{0.1in}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Internship Compliance Metrics]
+    \textbf{Total Weeks Logged:} 5 Weeks \hfill \textbf{Total Days:} 25 Working Days \\
+    \textbf{Total Hours Logged:} 79 Hours \hfill \textbf{Target Subsystems:} Chatbot, Recommender, Tic-Tac-Toe AI
+\end{tcolorbox}
+
+\section*{Week 1: Requirements Analysis, Environment Setup, and Subsystem Planning}
+\begin{longtable}{L{2.8cm} C{1.2cm} L{10.5cm}}
+    \toprule
+    \textbf{Date} & \textbf{Hours} & \textbf{Technical Tasks Performed} \\
+    \midrule
+    \endhead
+    \bottomrule
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    Week 1, Day 1 \newline (May 18, 2026) & 3 & Cloned the workspace repository containing the three git submodules. Analyzed repository architecture, configured git paths, initialized a Python 3.10 virtual environment, and mapped out dependency requirements for the three subsystems. \\
+    \addlinespace
+    Week 1, Day 2 \newline (May 19, 2026) & 3 & Set up local Python development environment. Installed required framework packages including FastAPI, Uvicorn, SQLite3, and Pytest. Structured the directory layout for backend services and static frontends, ensuring modular Separation of Concerns. \\
+    \addlinespace
+    Week 1, Day 3 \newline (May 20, 2026) & 3 & Studied the requirements and mathematical foundations of all three modules. Formulated specifications for regular-expression NLP matching, collaborative filtering via matrix factorization, content-based recommendation via cosine similarity, and minimax game theory. \\
+    \addlinespace
+    Week 1, Day 4 \newline (May 21, 2026) & 3 & Designed the database schema in SQLite for the Movie Recommendation System. Configured tables for movies, users, and ratings. Coded a database adapter in database.py and initialized it with mock movie and user ratings data for early functional testing. \\
+    \addlinespace
+    Week 1, Day 5 \newline (May 22, 2026) & 3 & Analyzed database connection methods and prepared schema diagrams for the recommendation model. Formulated the mathematical integration strategy for aligning content-based user profile vectors with FunkSVD latent factors. \\
+\end{longtable}
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!60!black,title=Weekly Review (Week 1)]
+    \begin{itemize}
+        \item \textbf{Technical Assessment:} Evaluated the database design and validated SQLite relational schema indexing.
+        \item \textbf{Implementation Status:} Verified unique index constraints on user/movie ID columns to optimize query speeds.
+    \end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+\section*{Week 2: Rule-Based Chatbot Subsystem Development}
+\begin{longtable}{L{2.8cm} C{1.2cm} L{10.5cm}}
+    \toprule
+    \textbf{Date} & \textbf{Hours} & \textbf{Technical Tasks Performed} \\
+    \midrule
+    \endhead
+    \bottomrule
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    Week 2, Day 1 \newline (May 25, 2026) & 3 & Commenced coding the Rule-Based Chatbot. Created intents.json to catalog conversational intents, regular expression patterns with capture groups, and text response templates. Coded the text normalizer in chatbot.py to sanitize user input by handling case folding, stripping punctuation, and cleaning whitespace. \\
+    \addlinespace
+    Week 2, Day 2 \newline (May 26, 2026) & 4 & Programmed the Intent Classifier and Slot Filler in Python. Wrote logic to dynamically compile regular expressions from intents.json, match input sequences, and extract variables from named capture groups (such as names and locations) to fill context slots. \\
+    \addlinespace
+    Week 2, Day 3 \newline (May 27, 2026) & 3 & Designed and integrated the stateful Session Manager within chatbot.py. Created a context dictionary mapped to distinct user session IDs, allowing the chatbot to maintain conversational state and context-aware responses (such as addressing users by their captured names). \\
+    \addlinespace
+    Week 2, Day 4 \newline (May 28, 2026) & 3 & Developed the web interface for the chatbot using HTML5, vanilla CSS, and JavaScript. Designed a responsive chat widget with glassmorphism styling. Ported the regex classification and slot-filling logic into app.js to run client-side. \\
+    \addlinespace
+    Week 2, Day 5 \newline (May 29, 2026) & 3 & Wrote unit tests in test\_chatbot.py using the unittest module. Verified correct behavior of normalizer functions, pattern classifiers, and session state retention. Added randomized fallback response arrays to intents.json to handle unmatched inputs. \\
+\end{longtable}
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!60!black,title=Weekly Review (Week 2)]
+    \begin{itemize}
+        \item \textbf{Technical Assessment:} Tested regex patterns and checked name capture group slot-filling functions in chatbot.py.
+        \item \textbf{Implementation Status:} Configured randomized fallback response arrays in intents.json to handle unmatched inputs.
+    \end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+\section*{Week 3: Movie Recommendation System Subsystem Development}
+\begin{longtable}{L{2.8cm} C{1.2cm} L{10.5cm}}
+    \toprule
+    \textbf{Date} & \textbf{Hours} & \textbf{Technical Tasks Performed} \\
+    \midrule
+    \endhead
+    \bottomrule
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    Week 3, Day 1 \newline (June 01, 2026) & 3 & Started the Recommendation System codebase. Programmed the Content-Based Filtering algorithm in recommender.py. Coded the logic to compute user profile vectors from historical movie ratings, centering the rating scores around a 2.5 baseline. \\
+    \addlinespace
+    Week 3, Day 2 \newline (June 02, 2026) & 3 & Developed the Cosine Similarity metric to compare user profile vectors against movie genre multi-hot vectors. Coded the mathematical formula utilizing dot products divided by L2 norms. Verified similarity outputs using sample vector pairs. \\
+    \addlinespace
+    Week 3, Day 3 \newline (June 03, 2026) & 4 & Programmed the Collaborative Filtering engine using FunkSVD matrix factorization. Coded the Stochastic Gradient Descent (SGD) training loop to decompose the user-movie rating matrix into user-latent ($P$) and movie-latent ($Q$) matrices, applying $L_2$ regularization to control overfitting. \\
+    \addlinespace
+    Week 3, Day 4 \newline (June 04, 2026) & 3 & Created the hybrid recommendation blender in recommender.py. Blended SVD scores and Content-Based scores using a weighting coefficient of 0.6. Built FastAPI API endpoints in backend/main.py to serve recommendations to the frontend client. \\
+    \addlinespace
+    Week 3, Day 5 \newline (June 05, 2026) & 3 & Designed the CineMatch Dashboard frontend using HTML, CSS, and vanilla JS. Programmed dynamic movie card rendering and direct user rating submittals that trigger model updates. Configured training testing modules in tests/test\_recommender.py to validate SVD model weights convergence. \\
+\end{longtable}
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!60!black,title=Weekly Review (Week 3)]
+    \begin{itemize}
+        \item \textbf{Technical Assessment:} Scrutinized the FunkSVD rating prediction scaling and rating convergence constraints.
+        \item \textbf{Implementation Status:} Developed min-max normalization logic in recommender.py to scale SVD scores to 0-to-1 bounds.
+    \end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+\section*{Week 4: Unbeatable Tic-Tac-Toe AI Subsystem Development}
+\begin{longtable}{L{2.8cm} C{1.2cm} L{10.5cm}}
+    \toprule
+    \textbf{Date} & \textbf{Hours} & \textbf{Technical Tasks Performed} \\
+    \midrule
+    \endhead
+    \bottomrule
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    Week 4, Day 1 \newline (June 08, 2026) & 3 & Started development of the Tic-Tac-Toe AI. Defined the board representation using a 9-element array and set up game endpoints. Coded the frontend board layout and interactive grid styling, complete with state animations. \\
+    \addlinespace
+    Week 4, Day 2 \newline (June 09, 2026) & 3 & Coded the core recursive Minimax decision tree algorithm in minimax.py. Implemented depth-discounted utilities, assigning +10 minus depth for AI wins (rewarding faster victories) and -10 plus depth for human wins (delaying losses). \\
+    \addlinespace
+    Week 4, Day 3 \newline (June 10, 2026) & 3 & Added Alpha-Beta Pruning optimization to the Minimax search tree. Implemented pruning bounds checks where recursion halts if the beta value drops below or matches the alpha value. Tested the performance improvement in state evaluations. \\
+    \addlinespace
+    Week 4, Day 4 \newline (June 11, 2026) & 4 & Integrated a Fail-Soft Transposition Cache in the minimax solver. Developed key hashing to store evaluated board states. Programmed depth-neutral normalization for cached scores, preventing depth-discounted values from polluting other branches. \\
+    \addlinespace
+    Week 4, Day 5 \newline (June 12, 2026) & 3 & Created verify\_unbeatable.py to simulate all 255,168 possible game state sequences, validating that the AI never loses a game. Optimized initial moves lookup by seeding the transposition cache with empty-board and single-move evaluations. \\
+\end{longtable}
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!60!black,title=Weekly Review (Week 4)]
+    \begin{itemize}
+        \item \textbf{Technical Assessment:} Audited minimax depth-discounted values and early game response latency.
+        \item \textbf{Implementation Status:} Pre-seeded the transposition cache with empty-board states to achieve 0ms initial moves computation.
+    \end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+\section*{Week 5: Subsystem Integration, Testing, and Code Profiling}
+\begin{longtable}{L{2.8cm} C{1.2cm} L{10.5cm}}
+    \toprule
+    \textbf{Date} & \textbf{Hours} & \textbf{Technical Tasks Performed} \\
+    \midrule
+    \endhead
+    \bottomrule
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    Week 5, Day 1 \newline (June 15, 2026) & 3 & Commenced system integration. Combined the Rule-Based Chatbot, CineMatch Movie Recommendation System, and Tic-Tac-Toe AI into a unified monorepo. Consolidated project dependencies into a root requirements.txt and organized static routing. \\
+    \addlinespace
+    Week 5, Day 2 \newline (June 16, 2026) & 3 & Wrote comprehensive integration and end-to-end regression tests using Pytest. Created assertions for chatbot intent classification, SQLite database CRUD operations, SVD recommender training loops, and Minimax solver accuracy. \\
+    \addlinespace
+    Week 5, Day 3 \newline (June 17, 2026) & 3 & Conducted performance profiling across the unified application. Used Python cProfile to measure API response times and verify transposition cache hits. Analyzed SQLite connection pool size and optimized DB query paths. \\
+    \addlinespace
+    Week 5, Day 4 \newline (June 18, 2026) & 4 & Finalized technical documentation and structural project reports. Drafted architectural system flows, outlined mathematical formulations (SVD updates, Minimax equations), and organized test coverage summaries. \\
+    \addlinespace
+    Week 5, Day 5 \newline (June 19, 2026) & 3 & Finalized the repository integration, cleaned up temporary debug logs, and verified the final build. Documented the system architectures, mathematical formulas (such as SGD parameter updates and Minimax recursion bounds), and testing coverage in the project README. \\
+\end{longtable}
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!60!black,title=Weekly Review (Week 5)]
+    \begin{itemize}
+        \item \textbf{Technical Assessment:} Inspected codebase documentation, docstring mathematical derivations, and integration builds.
+        \item \textbf{Implementation Status:} Documented FunkSVD gradient update steps and Tic-Tac-Toe state space proofs in docstrings.
+    \end{itemize}
+\end{tcolorbox}
+
+\end{document}
