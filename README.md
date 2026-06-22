@@ -69,6 +69,9 @@ git submodule update --init --recursive
 
 ## ☄️ Project 1: Chatbot with Rule-Based Responses
 
+> [!NOTE]
+> For detailed documentation, system architecture, and configurations, see the [Chatbot Submodule README.md](file:///Users/sreeramlagisetty/Desktop/CODSOFT/chatbot-with-rule-based-responses/README.md).
+
 A modular, stateful, rules-based chatbot engine featuring natural language processing, slot-filling, and session context tracking. The application is mirrored in both Python (for terminal usage) and JavaScript (for client-side browser execution).
 
 ### ⚙️ Core Architecture & NLP Flow
@@ -96,6 +99,9 @@ Open your browser and navigate to `http://localhost:8080` to experience the mode
 ---
 
 ## ❌ Project 2: Unbeatable Tic-Tac-Toe AI
+
+> [!NOTE]
+> For detailed documentation, mathematical proofs, system architecture, and local deployment instructions, see the [Tic-Tac-Toe AI Submodule README.md](file:///Users/sreeramlagisetty/Desktop/CODSOFT/tic-tac-toe-ai/README.md).
 
 A web-based Tic-Tac-Toe application powered by an unbeatable Minimax agent. Optimizations like Alpha-Beta Pruning and Transposition Table caching allow the backend to respond in sub-millisecond times ($O(1)$ lookup for repeating states).
 
@@ -148,6 +154,9 @@ $$\beta \le \alpha$$
 ---
 
 ## 🎬 Project 3: CineMatch Movie Recommendation System
+
+> [!NOTE]
+> For detailed documentation, algorithm explanations, database schema, and REST API specification, see the [CineMatch Submodule README.md](file:///Users/sreeramlagisetty/Desktop/CODSOFT/recommendation-system/README.md).
 
 CineMatch is a movie recommendation engine combining Collaborative Filtering (FunkSVD matrix factorization) and Content-Based Filtering (multi-hot genre vector matching via Cosine Similarity).
 
